@@ -4,7 +4,7 @@ const weddingInfo = {
     weddingDate: "2026-08-02T14:45:00", // Countdow tới 14:45 02/08/2026
     dateString: "02/08/2026",
     heroTitle: "LỄ THÀNH HÔN",
-    musicUrl: "assets/music/I Do.mp3",
+    musicUrl: "assets/music/Lễ Đường.mp3",
     mapUrl: "https://maps.app.goo.gl/yGSiw5LjDviwe3M29?g_st=ic",
 
     family: {

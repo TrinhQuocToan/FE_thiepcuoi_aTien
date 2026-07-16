@@ -436,32 +436,30 @@ function initScrollReveal() {
 function initPetals() {
     const container = document.getElementById('petals-container');
     if (!container) return;
-    
+
     // Mật độ rơi vừa phải
-    const petalCount = 20; 
-    
+    const petalCount = 20;
+
     for (let i = 0; i < petalCount; i++) {
         const petal = document.createElement('div');
         petal.classList.add('petal');
-        
+
         // Random size từ 8px - 14px
         const size = Math.random() * 6 + 8;
         petal.style.width = `${size}px`;
         petal.style.height = `${size}px`;
-        
+
         // Vị trí ngang random toàn màn hình
         petal.style.left = `${Math.random() * 100}vw`;
-        
+
         // Thời gian rơi chậm nhẹ nhàng (12s - 20s)
         const fallDuration = Math.random() * 8 + 12;
         // Delay âm để hoa có mặt sẵn trên màn ngay khi load 
-        const fallDelay = Math.random() * -15; 
-        
-        petal.style.animationDuration = `${fallDuration}s, ${fallDuration/2}s`;
+        const fallDelay = Math.random() * -15;
+
+        petal.style.animationDuration = `${fallDuration}s, ${fallDuration / 2}s`;
         petal.style.animationDelay = `${fallDelay}s, ${fallDelay}s`;
-        
+
         container.appendChild(petal);
     }
 }
-/ /   T r i g g e r   r e b u i l d  
- 
